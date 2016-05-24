@@ -28,15 +28,6 @@ module.exports = {
         loaders: ['style','css','less']
       },
       {
-        test: /\.html$/,
-        name: 'mandrillTemplates',
-        loader: 'raw!html-minify'
-      },
-      // {
-      //   test: /\.(jpe?g|png|gif|svg)$/i,
-      //   loaders: ['url?limit=10000','img?progressive=true']
-      // }
-      {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loaders: [
             'file?hash=sha512&digest=hex&name=[hash].[ext]',
@@ -48,5 +39,9 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.js', '.es6']
+  },
+  devServer: {
+    inline:true,
+    port: 8080
   }
-}
+};

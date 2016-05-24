@@ -1,4 +1,4 @@
-require ('./logger.js');
-require("./something.less")
-document.write('welcome to my app again me too be hi to 4');
+require ('./secondFile');
+require ('./secondFile.less');
+require('./something.less');
 console.log('app loaded');

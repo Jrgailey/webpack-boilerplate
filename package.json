@@ -1,12 +1,12 @@
 {
   "name": "webpack-start",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a boilerplate for a webpack-enabled application.",
   "main": "app.js",
   "scripts": {
-    "start": "webpack-dev-server --inline"
+    "start": "webpack-dev-server"
   },
-  "author": "",
+  "author": "James Gailey",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.9.0",
